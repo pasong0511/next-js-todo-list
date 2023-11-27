@@ -37,3 +37,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 유튜브
 https://www.youtube.com/watch?v=LDLyd5uMJjA
+http://localhost:3000/todos
+http://localhost:3000/api/todos
