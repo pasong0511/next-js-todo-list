@@ -8,7 +8,7 @@ connect();
 export async function GET(request: NextRequest) {
   try {
     const todos = await Todo.find({});
-    console.log();
+    console.log(todos);
     return NextResponse.json({ msg: "find all todos", success: true, todos });
   } catch (error) {
     return NextResponse.json(

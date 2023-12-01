@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const TodoShema = new mongoose.Schema({
+const TodoSchema = new mongoose.Schema({
   id: {
     type: String,
     required: true,
@@ -16,6 +16,6 @@ const TodoShema = new mongoose.Schema({
   },
 });
 
-const Todo = mongoose.models.todos || mongoose.model("todos", TodoShema);
+const Todo = mongoose.models.todos || mongoose.model("todos", TodoSchema);
 
 export default Todo;
