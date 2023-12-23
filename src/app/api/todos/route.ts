@@ -43,3 +43,20 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+export async function DELETE(request: NextRequest) {
+  try {
+    // const path = request.nextUrl.pathname;
+    // const id = getIdFromPathname(path);
+
+    await Todo.deleteMany({});
+    return NextResponse.json({ msg: "Todo Deleted", success: true });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        msg: "이슈 발생!",
+      },
+      { status: 500 }
+    );
+  }
+}
